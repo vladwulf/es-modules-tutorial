@@ -1,0 +1,22 @@
+{
+  "name": "es-modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "common": "node src",
+    "es6": "rimraf dist && babel src --out-dir dist && node dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
+}
